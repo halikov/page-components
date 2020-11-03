@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  font-weight: normal;
+}
+
+:root {
+  --font: 'Roboto', Helvetica, sans-serif;
+  --pink: #d66892;
+  --blue: #303864;
+  --yellow: #f4d16e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  padding: 40px;
+  font-family: var(--font);
+  font-size: 16px;
+  background-color: #e5e5e5;
+}
+
+/* ------------------ */
+/* ------ Docker ------ */
+
+.docker {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: 16px 1fr;
+  column-gap: 64px;
+  row-gap: 27px;
+  width: 540px;
+  height: 230px;
+  margin: 0;
+  padding: 40px;
+  background-color: #ffffff;
+
+  box-shadow: 0 10px 24px 0 rgba(48,56,100,0.2);
+}
+
+/* Page number */
+.page-num {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: auto;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* content */
+
+.docker__content {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+  max-width: 236px;
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+}
+
+/* Title */
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: auto;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* text */
+.text {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* buttons */
+.buttons {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  align-self: end;
+  width: 130px;
+}
+
+.buttons__list {
+  display: grid;
+  grid-template-columns: 55px 55px;
+  align-items: center;
+  align-content: end;
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.button:hover,
+.button:active,
+.button:focus,
+.button--active {
+  background-color: var(--pink);
+}
+
+.button:hover path,
+.button:active path,
+.button:focus path,
+.button--active path {
+  stroke: #ffffff;
+}
+
+/* ------------------------------- */
+/* ----------- Share ------------- */
+
+.share {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 155px;
+  margin-top: 50px;
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+.share__content {  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(500px - 85px);
+  padding: 60px 30px;
+}
+
+.share__count {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.share__icon {
+  margin-right: 5px;
+}
+
+.share__value {
+  font-family: var(--font);
+  font-weight: 900;
+  font-size: 27px;
+  line-height: 32px;
+}
+
+.icon {
+  stroke: #ffffff;
+}
+
+.share__text {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.share__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 100%;
+  background-color: var(--yellow);
+  border: none;
+}
+
+.share__button-icon {
+  stroke: var(--blue);
+}

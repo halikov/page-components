@@ -1,0 +1,11 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 21" id="pointer-left_icon">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".4" stroke-width="2.13" d="M10.5 19L2 10.5 10.5 2"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 21" id="pointer-right_icon">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.13" d="M2 2l8.5 8.5L2 19"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 44 44" id="arrow-right_icon">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.75" d="M9.17 22h25.66m-11 11l11-11m-11-11l11 11"></path>
+  </symbol>
+</svg>
