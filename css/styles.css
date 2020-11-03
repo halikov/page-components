@@ -140,11 +140,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  
   width: 500px;
   height: 155px;
   margin-top: 50px;
+  
   background-color: var(--blue);
   color: #ffffff;
+  box-shadow: 0 10px 24px 0 rgba(48,56,100,0.2);
 }
 
 .share__content {  
@@ -197,5 +200,25 @@
 }
 
 .share__button-icon {
+  stroke: var(--blue);
+}
+
+/* -------------------------- */
+/* ----------- ampul -------- */
+
+.bulb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 24px 0 rgba(48,56,100,0.2);
+}
+
+.bulb__icon {
   stroke: var(--blue);
 }
